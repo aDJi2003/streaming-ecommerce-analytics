@@ -1,3 +1,9 @@
-*
-!.gitignore
-!docker-compose.yaml
+*.json
+
+*.csv
+
+dbt_ecommerce/logs/
+dbt_ecommerce/target/
+dbt_ecommerce/dbt_packages/
+__pycache__/
+*.pyc
