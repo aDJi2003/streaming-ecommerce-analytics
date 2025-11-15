@@ -27,7 +27,7 @@ This project is designed to showcase a fundamental understanding of modern data 
 
 The pipeline consists of several key components that work sequentially to process the data:
 
-**`Data Source (https://www.kaggle.com/datasets/vijayuv/onlineretail)`** ➡️ **`Python Producer`** ➡️ **`Apache Kafka (Broker)`** ➡️ **`Python Consumer`** ➡️ **`BigQuery (Landing Zone)`** ➡️ **`dbt`** ➡️ **`BigQuery (Analytics Zone)`**
+![Real-Time Data Streaming and Transformation Pipeline](images/kafka_streaming_diagram.jpg)
 
 1.  **Python Producer**: A script that reads data from a CSV file and streams each row as a JSON message to a Kafka topic.
 2.  **Apache Kafka**: Acts as a reliable message broker, receiving the data stream from the producer and making it available to the consumer.
